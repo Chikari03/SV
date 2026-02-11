@@ -3,48 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Piénsalo 🥺</title>
+<title>Piénsalo bien 🥺</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif;}
+*{ box-sizing:border-box; }
+
 body{
-  background:white;
+  margin:0;
+  min-height:100vh;
   display:flex;
   justify-content:center;
+  align-items:center;
+  background:#f4f4f4;
+  font-family:Arial, sans-serif;
 }
-.container{
-  width:100%;
-  max-width:420px;
-  min-height:100vh;
-  padding-top:1.5cm;
-  padding-bottom:2cm;
+
+.card{
+  background:#fff;
+  width:360px;
+  height:640px;
+  border-radius:26px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
   text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
-img{
+
+h1{
+  font-size:1.3rem;
+  color:#D12164;
+}
+
+.gif-container img{
   width:100%;
-  max-width:300px;
-  margin:1cm auto;
+  height:300px;
+  object-fit:contain;
 }
+
+p{
+  font-size:1.1rem;
+}
+
 button{
-  padding:12px 25px;
-  font-size:16px;
+  width:100%;
+  padding:12px 0;
   border:none;
-  border-radius:20px;
-  background:#ff6b81;
-  color:white;
+  border-radius:26px;
+  background:#D12164;
+  color:#fff;
+  font-size:1.1rem;
   cursor:pointer;
 }
 </style>
 </head>
 
 <body>
-<div class="container">
-  <h2>Piénsalo bien gordito 🥺</h2>
-  <img src="no.gif" alt="Nooo">
-  <br>
-  <button onclick="location.href='index.html'">Volver ❤️</button>
+<div class="card">
 
-  <audio src="amor.mp3" autoplay controls></audio>
+  <h1>¿Quieres ser mi San Valentín?</h1>
+
+  <div class="gif-container">
+    <img src="no.gif" alt="Piénsalo bien">
+  </div>
+
+  <p>Piénsalo bien gordito 🥺</p>
+
+  <button onclick="location.href='gracias.html'">AY Sí 💖</button>
+
 </div>
 </body>
 </html>

@@ -6,52 +6,64 @@
 <title>San Valentín 💖</title>
 
 <style>
+*{ box-sizing:border-box; }
+
 body{
   margin:0;
-  background:#fff;
+  min-height:100vh;
   display:flex;
   justify-content:center;
+  align-items:center;
+  background:#f4f4f4;
   font-family:Arial, sans-serif;
 }
 
-.app{
-  width:100%;
-  max-width:390px;
-  aspect-ratio:9/16;
+.card{
+  background:#fff;
+  width:360px;
+  height:640px;
+  border-radius:26px;
   padding:16px;
-  box-sizing:border-box;
   display:flex;
   flex-direction:column;
+  justify-content:space-between;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
-.gif{
+/* GIF grande arriba */
+.gif-container img{
   width:100%;
-  height:55%;
+  height:300px;
   object-fit:contain;
 }
 
-.pregunta{
-  text-align:center;
-  font-size:24px;
-  font-weight:bold;
+/* Pregunta */
+h1{
+  font-size:1.35rem;
   color:#D12164;
-  margin:12px 0;
+  margin:10px 0 0;
 }
 
-.botones{
+.heart{
+  font-size:1.8rem;
+  margin-top:4px;
+}
+
+/* Botones */
+.buttons{
   display:flex;
-  gap:12px;
-  margin-top:auto;
+  gap:14px;
 }
 
 button{
   flex:1;
-  padding:12px 0;
+  padding:10px 0;
+  font-size:1.05rem;
   border:none;
-  border-radius:30px;
-  font-size:18px;
-  color:#fff;
+  border-radius:22px;
   cursor:pointer;
+  color:#fff;
 }
 
 .si{ background:#D12164; }
@@ -60,15 +72,18 @@ button{
 </head>
 
 <body>
-<div class="app">
+<div class="card">
 
-  <img src="gracias.gif" class="gif">
-
-  <div class="pregunta">
-    ¿Quieres ser mi San Valentín?<br>❤️
+  <div class="gif-container">
+    <img src="gracias.gif" alt="Ositos">
   </div>
 
-  <div class="botones">
+  <div>
+    <h1>¿Quieres ser mi San Valentín?</h1>
+    <div class="heart">❤️</div>
+  </div>
+
+  <div class="buttons">
     <button class="si" onclick="location.href='gracias.html'">AY Sí 💖</button>
     <button class="no" onclick="location.href='no.html'">NO 😭</button>
   </div>

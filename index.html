@@ -23,30 +23,35 @@ body{
   width:360px;
   height:640px;
   border-radius:26px;
-  padding:16px;
+  padding:0 16px;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   text-align:center;
 }
 
-/* GIF grande arriba */
+/* Márgenes superior e inferior */
+.top-space{ margin-top:115px; }
+.bottom-space{ margin-bottom:115px; }
+
+/* GIF */
 .gif-container img{
   width:100%;
-  height:300px;
+  height:280px;
   object-fit:contain;
+  margin-bottom:95px;
 }
 
-/* Pregunta */
+/* Texto */
 h1{
   font-size:1.35rem;
   color:#D12164;
-  margin:10px 0 0;
+  margin:0;
 }
 
 .heart{
   font-size:1.8rem;
-  margin-top:4px;
+  margin-top:8px;
 }
 
 /* Botones */
@@ -60,25 +65,20 @@ button{
   padding:10px 0;
   font-size:1.05rem;
   border:none;
-  border-radius:22px;
+  border-radius:24px;
   cursor:pointer;
   color:#fff;
 }
 
-.si{
-  background:#D12164;
-}
-
-.no{
-  background:#595959;
-}
+.si{ background:#D12164; }
+.no{ background:#595959; }
 </style>
 </head>
 
 <body>
 
 <div class="card">
-  <div class="gif-container">
+  <div class="top-space gif-container">
     <img src="gracias.gif" alt="Ositos">
   </div>
 
@@ -87,7 +87,7 @@ button{
     <div class="heart">❤️</div>
   </div>
 
-  <div class="buttons">
+  <div class="bottom-space buttons">
     <button class="si" onclick="window.location.href='gracias.html'">AY Sí 💖</button>
     <button class="no" onclick="window.location.href='no.html'">NO 😭</button>
   </div>

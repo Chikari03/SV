@@ -3,47 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gracias ❤️</title>
+<title>Gracias 💖</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif;}
+*{ box-sizing:border-box; }
+
 body{
-  background:white;
+  margin:0;
+  min-height:100vh;
   display:flex;
   justify-content:center;
+  align-items:center;
+  background:#f4f4f4;
+  font-family:Arial, sans-serif;
 }
-.container{
-  width:100%;
-  max-width:420px;
-  min-height:100vh;
-  padding:2cm 1cm;
+
+.card{
+  background:#fff;
+  width:360px;
+  height:640px;
+  border-radius:26px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
   text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
-img{
-  width:100%;
-  max-width:300px;
-  border:4px solid #595959;
-  margin-bottom:0.8cm;
+
+h1{
+  color:#1B8BA5;
+  font-size:1.4rem;
 }
+
+.photos{
+  display:flex;
+  justify-content:space-between;
+}
+
+.photos img{
+  width:48%;
+  height:240px;
+  object-fit:cover;
+  border:6px solid #595959;
+  border-radius:10px;
+}
+
 p{
-  margin-top:0.5cm;
-  font-size:16px;
-}
-.heart{
-  position:fixed;
-  color:#ff6b81;
-  animation:float 6s linear infinite;
-}
-@keyframes float{
-  0%{transform:translateY(100vh);opacity:1;}
-  100%{transform:translateY(-10vh);opacity:0;}
+  font-size:0.95rem;
+  line-height:1.5;
 }
 </style>
 </head>
 
 <body>
-<div class="container">
-  <img src="gracias.gif" alt="Gracias amor">
+<div class="card">
+
+  <h1>¡Gracias por aceptar amorcito!</h1>
+
+  <div class="photos">
+    <img src="foto1.jpg">
+    <img src="foto2.jpg">
+  </div>
 
   <p>
     Deseo que nuestro día sea especial,<br>
@@ -52,19 +73,6 @@ p{
     🍕🥂🎬
   </p>
 
-  <audio src="amor.mp3" autoplay controls></audio>
 </div>
-
-<script>
-setInterval(()=>{
-  const h=document.createElement("div");
-  h.className="heart";
-  h.innerHTML="❤️";
-  h.style.left=Math.random()*100+"vw";
-  h.style.fontSize=(15+Math.random()*15)+"px";
-  document.body.appendChild(h);
-  setTimeout(()=>h.remove(),6000);
-},400);
-</script>
 </body>
 </html>

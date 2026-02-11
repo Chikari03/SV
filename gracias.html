@@ -23,12 +23,15 @@ body{
   width:360px;
   height:640px;
   border-radius:26px;
-  padding:20px;
+  padding:0 20px;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   text-align:center;
 }
+
+.top-space{ margin-top:115px; }
+.bottom-space{ margin-bottom:115px; }
 
 h1{
   color:#1B8BA5;
@@ -38,13 +41,14 @@ h1{
 .photos{
   display:flex;
   justify-content:space-between;
+  margin:95px 0;
 }
 
 .photos img{
   width:48%;
   height:240px;
   object-fit:cover;
-  border:6px solid #e6d3b1; /* marco tipo madera clara */
+  border:5px solid #595959;
   border-radius:10px;
 }
 
@@ -58,20 +62,23 @@ p{
 <body>
 
 <div class="card">
-  <h1>¡Gracias por aceptar amorcito!</h1>
+  <div class="top-space">
+    <h1>¡Gracias por aceptar amorcito!</h1>
+  </div>
 
   <div class="photos">
     <img src="foto1.jpg" alt="Foto 1">
     <img src="foto2.jpg" alt="Foto 2">
   </div>
 
-  <p>
-    ¡Gracias por aceptar! 💕<br>
-    Espero que hoy disfrutemos cada segundo,
-    que celebremos nuestro día como se debe
-    y que pasemos un tiempo inolvidable.<br>
-    <strong>Te amo mucho 💖</strong>
-  </p>
+  <div class="bottom-space">
+    <p>
+      Deseo que nuestro mundo sea solo nosotros dos,  
+      celebrando en casa y tal vez cocinando juntos.  
+      <br><strong>Te amo mucho</strong><br>
+      🍕🥂🎬
+    </p>
+  </div>
 </div>
 
 </body>

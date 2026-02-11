@@ -6,48 +6,51 @@
 <title>Gracias 💖</title>
 
 <style>
+*{ box-sizing:border-box; }
+
 body{
   margin:0;
-  height:100vh;
+  min-height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
-  background:#111;
+  background:#0f0f0f;
   font-family:Arial, sans-serif;
 }
 
 .card{
   background:#fff;
-  width:90%;
-  max-width:380px;
-  aspect-ratio:9/16;
-  border-radius:20px;
+  width:360px;
+  height:640px;
+  border-radius:26px;
   padding:20px;
   display:flex;
   flex-direction:column;
-  align-items:center;
-  justify-content:center;
+  justify-content:space-between;
   text-align:center;
+}
+
+h1{
+  color:#1B8BA5;
+  font-size:1.4rem;
 }
 
 .photos{
   display:flex;
-  gap:15px;
-  margin-bottom:20px;
+  justify-content:space-between;
 }
 
 .photos img{
-  width:130px;
-  height:180px;
+  width:48%;
+  height:240px;
   object-fit:cover;
-  border:5px solid white;
+  border:6px solid #e6d3b1; /* marco tipo madera clara */
   border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
 p{
   font-size:0.95rem;
-  line-height:1.4;
+  line-height:1.5;
 }
 </style>
 </head>
@@ -55,6 +58,8 @@ p{
 <body>
 
 <div class="card">
+  <h1>¡Gracias por aceptar amorcito!</h1>
+
   <div class="photos">
     <img src="foto1.jpg" alt="Foto 1">
     <img src="foto2.jpg" alt="Foto 2">

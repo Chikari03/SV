@@ -3,64 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Piénsalo 🥺</title>
+<title>Piénsalo bien 🥺</title>
 
 <style>
+*{ box-sizing:border-box; }
+
 body{
   margin:0;
-  background:#fff;
+  min-height:100vh;
   display:flex;
   justify-content:center;
+  align-items:center;
+  background:#f4f4f4;
   font-family:Arial, sans-serif;
 }
 
-.app{
-  width:100%;
-  max-width:390px;
-  aspect-ratio:9/16;
-  padding:16px;
-  box-sizing:border-box;
+.card{
+  background:#fff;
+  width:360px;
+  height:640px;
+  border-radius:26px;
+  padding:20px;
   display:flex;
   flex-direction:column;
+  justify-content:space-between;
   text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
-h2{
-  font-size:22px;
-  margin:8px 0;
+h1{
+  font-size:1.3rem;
+  color:#D12164;
 }
 
-.gif{
+.gif-container img{
   width:100%;
-  height:50%;
+  height:300px;
   object-fit:contain;
 }
 
-.texto{
-  font-size:18px;
-  margin:10px 0;
+p{
+  font-size:1.1rem;
 }
 
 button{
-  margin-top:auto;
+  width:100%;
   padding:12px 0;
   border:none;
-  border-radius:30px;
-  font-size:18px;
+  border-radius:26px;
   background:#D12164;
   color:#fff;
+  font-size:1.1rem;
+  cursor:pointer;
 }
 </style>
 </head>
 
 <body>
-<div class="app">
+<div class="card">
 
-  <h2>¿Quieres ser mi San Valentín?</h2>
+  <h1>¿Quieres ser mi San Valentín?</h1>
 
-  <img src="no.gif" class="gif">
+  <div class="gif-container">
+    <img src="no.gif" alt="Piénsalo bien">
+  </div>
 
-  <div class="texto">Piénsalo bien gordito 🥺</div>
+  <p>Piénsalo bien gordito 🥺</p>
 
   <button onclick="location.href='gracias.html'">AY Sí 💖</button>
 

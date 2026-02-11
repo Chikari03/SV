@@ -2,83 +2,57 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Piénsalo bien 🥺</title>
-
 <style>
-*{ box-sizing:border-box; }
-
-body{
-  margin:0;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#0f0f0f;
-  font-family:Arial, sans-serif;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
 }
-
-.card{
-  background:#fff;
-  width:360px;
-  height:640px;
-  border-radius:26px;
-  padding:0 20px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  text-align:center;
+.contenedor {
+  width: 100%;
+  max-width: 900px;
+  padding: 1.5cm 2cm 3cm;
+  text-align: center;
 }
-
-.top-space{ margin-top:115px; }
-.bottom-space{ margin-bottom:115px; }
-
-h1{
-  font-size:1.3rem;
-  color:#D12164;
+.titulo {
+  color: #D12164;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 2cm;
 }
-
-.gif-container img{
-  width:100%;
-  height:280px;
-  object-fit:contain;
-  margin:95px 0;
+.gif {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 2cm;
 }
-
-p{
-  font-size:1.1rem;
+.texto {
+  font-size: 24px;
+  margin-bottom: 2cm;
 }
-
-button{
-  width:100%;
-  padding:12px 0;
-  border:none;
-  border-radius:28px;
-  background:#D12164;
-  color:#fff;
-  font-size:1.1rem;
-  cursor:pointer;
+button {
+  width: 260px;
+  height: 55px;
+  font-size: 22px;
+  border-radius: 40px;
+  border: none;
+  background-color: #D12164;
+  color: white;
+  cursor: pointer;
 }
 </style>
 </head>
 
 <body>
+<div class="contenedor">
+  <div class="titulo">¿Quieres ser mi San Valentín?</div>
 
-<div class="card">
-  <div class="top-space">
-    <h1>¿Quieres ser mi San Valentín?</h1>
-  </div>
+  <img src="no.gif" class="gif">
 
-  <div class="gif-container">
-    <img src="no.gif" alt="Piénsalo bien">
-  </div>
+  <div class="texto">Piénsalo bien gordito 🥺</div>
 
-  <p>Piénsalo bien gordito 🥺</p>
-
-  <div class="bottom-space">
-    <button onclick="window.location.href='gracias.html'">AY Sí 💖</button>
-  </div>
+  <button onclick="location.href='gracias.html'">AY Sí 💖</button>
 </div>
-
 </body>
 </html>

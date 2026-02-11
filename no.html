@@ -23,12 +23,15 @@ body{
   width:360px;
   height:640px;
   border-radius:26px;
-  padding:20px;
+  padding:0 20px;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   text-align:center;
 }
+
+.top-space{ margin-top:115px; }
+.bottom-space{ margin-bottom:115px; }
 
 h1{
   font-size:1.3rem;
@@ -37,8 +40,9 @@ h1{
 
 .gif-container img{
   width:100%;
-  height:300px;
+  height:280px;
   object-fit:contain;
+  margin:95px 0;
 }
 
 p{
@@ -49,7 +53,7 @@ button{
   width:100%;
   padding:12px 0;
   border:none;
-  border-radius:26px;
+  border-radius:28px;
   background:#D12164;
   color:#fff;
   font-size:1.1rem;
@@ -61,7 +65,9 @@ button{
 <body>
 
 <div class="card">
-  <h1>¿Quieres ser mi San Valentín?</h1>
+  <div class="top-space">
+    <h1>¿Quieres ser mi San Valentín?</h1>
+  </div>
 
   <div class="gif-container">
     <img src="no.gif" alt="Piénsalo bien">
@@ -69,7 +75,9 @@ button{
 
   <p>Piénsalo bien gordito 🥺</p>
 
-  <button onclick="window.location.href='gracias.html'">AY Sí 💖</button>
+  <div class="bottom-space">
+    <button onclick="window.location.href='gracias.html'">AY Sí 💖</button>
+  </div>
 </div>
 
 </body>

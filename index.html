@@ -2,56 +2,70 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>San Valentín 💖</title>
+
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
+body{
+  margin:0;
+  background:#111;
+  font-family:Arial, sans-serif;
 }
-.contenedor {
-  width: 100%;
-  max-width: 900px;
-  padding: 3cm 2cm;
-  text-align: center;
+
+.contenedor{
+  max-width:390px;
+  min-height:100vh;
+  margin:auto;
+  padding:1.2cm 1cm;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
 }
-.gif {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 2.5cm;
+
+.gif{
+  width:100%;
+  max-height:42vh;
+  object-fit:contain;
+  margin-bottom:0.9cm;
 }
-.pregunta {
-  color: #D12164;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 2cm;
+
+.pregunta{
+  text-align:center;
+  font-size:26px;
+  font-weight:bold;
+  color:#D12164;
+  margin-bottom:0.9cm;
 }
-.botones {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+
+.botones{
+  display:flex;
+  gap:0.6cm;
+  margin-top:auto;
 }
-button {
-  width: 220px;
-  height: 55px;
-  font-size: 22px;
-  border: none;
-  border-radius: 35px;
-  cursor: pointer;
-  color: white;
+
+button{
+  flex:1;
+  padding:14px 0;
+  font-size:18px;
+  border:none;
+  border-radius:35px;
+  color:white;
+  cursor:pointer;
 }
-.si {
-  background-color: #D12164;
+
+.si{
+  background:#D12164;
 }
-.no {
-  background-color: #595959;
+
+.no{
+  background:#595959;
 }
 </style>
 </head>
 
 <body>
 <div class="contenedor">
+
   <img src="gracias.gif" class="gif">
 
   <div class="pregunta">
@@ -62,6 +76,7 @@ button {
     <button class="si" onclick="location.href='gracias.html'">AY Sí 💖</button>
     <button class="no" onclick="location.href='no.html'">NO 😭</button>
   </div>
+
 </div>
 </body>
 </html>

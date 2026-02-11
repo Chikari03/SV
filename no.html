@@ -2,50 +2,60 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Piénsalo bien 🥺</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piénsalo 🥺</title>
+
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
+body{
+  margin:0;
+  background:#111;
+  font-family:Arial, sans-serif;
 }
-.contenedor {
-  width: 100%;
-  max-width: 900px;
-  padding: 1.5cm 2cm 3cm;
-  text-align: center;
+
+.contenedor{
+  max-width:390px;
+  min-height:100vh;
+  margin:auto;
+  padding:1.2cm 1cm;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
-.titulo {
-  color: #D12164;
-  font-size: 34px;
-  font-weight: bold;
-  margin-bottom: 2cm;
+
+.titulo{
+  font-size:24px;
+  margin-bottom:0.6cm;
 }
-.gif {
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 2cm;
+
+.gif{
+  width:100%;
+  max-height:38vh;
+  object-fit:contain;
+  margin-bottom:0.6cm;
 }
-.texto {
-  font-size: 24px;
-  margin-bottom: 2cm;
+
+.texto{
+  font-size:20px;
+  margin-bottom:0.8cm;
 }
-button {
-  width: 260px;
-  height: 55px;
-  font-size: 22px;
-  border-radius: 40px;
-  border: none;
-  background-color: #D12164;
-  color: white;
-  cursor: pointer;
+
+button{
+  margin-top:auto;
+  width:100%;
+  padding:14px 0;
+  font-size:18px;
+  border:none;
+  border-radius:35px;
+  background:#D12164;
+  color:white;
 }
 </style>
 </head>
 
 <body>
 <div class="contenedor">
+
   <div class="titulo">¿Quieres ser mi San Valentín?</div>
 
   <img src="no.gif" class="gif">
@@ -53,6 +63,7 @@ button {
   <div class="texto">Piénsalo bien gordito 🥺</div>
 
   <button onclick="location.href='gracias.html'">AY Sí 💖</button>
+
 </div>
 </body>
 </html>
